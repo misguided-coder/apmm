@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="14" failures="0" name="com.example.ShoppingServiceTest" time="0.003" errors="0" skipped="0">
+<testsuite tests="14" failures="0" name="com.example.ShoppingServiceTest" time="0" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_131\jre\bin"/>
@@ -62,18 +62,18 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="com.example.ShoppingServiceTest" name="removingItemCompletelyFromCartShouldRemoveItFromCart" time="0"/>
-  <testcase classname="com.example.ShoppingServiceTest" name="removingNonExistantItemFromCartShouldYieldException" time="0"/>
   <testcase classname="com.example.ShoppingServiceTest" name="placeOrderShouldTakeLessThenFiveSecondsOnlyForSLA" time="0"/>
-  <testcase classname="com.example.ShoppingServiceTest" name="placeOrderShouldSaveOrderInDBWithOrderNumber" time="0"/>
-  <testcase classname="com.example.ShoppingServiceTest" name="addingDuplicateItemShouldIncreaseSameItemSize" time="0"/>
-  <testcase classname="com.example.ShoppingServiceTest" name="addingItemInCartShouldMakeCartSizeToBeOne" time="0"/>
+  <testcase classname="com.example.ShoppingServiceTest" name="removingNonExistantItemFromCartShouldYieldException" time="0"/>
+  <testcase classname="com.example.ShoppingServiceTest" name="removingItemCompletelyFromCartShouldRemoveItFromCart" time="0"/>
   <testcase classname="com.example.ShoppingServiceTest" name="removingItemFromCartShouldReduceSizeByOne" time="0"/>
   <testcase classname="com.example.ShoppingServiceTest" name="addingLaptopInCartShouldAddLaptopOnly" time="0"/>
-  <testcase classname="com.example.ShoppingServiceTest" name="addingMultipleItemsShouldIncreaseCartSize" time="0.001"/>
-  <testcase classname="com.example.ShoppingServiceTest" name="cartPriceShouldBeAccurate" time="0.001"/>
+  <testcase classname="com.example.ShoppingServiceTest" name="addingMultipleItemsShouldIncreaseCartSize" time="0"/>
+  <testcase classname="com.example.ShoppingServiceTest" name="addingItemInCartShouldMakeCartSizeToBeOne" time="0"/>
+  <testcase classname="com.example.ShoppingServiceTest" name="addingDuplicateItemShouldIncreaseSameItemSize" time="0"/>
+  <testcase classname="com.example.ShoppingServiceTest" name="placeOrderShouldSaveOrderInDBWithOrderNumber" time="0"/>
+  <testcase classname="com.example.ShoppingServiceTest" name="emptyCartShouldHaveZeroItems" time="0"/>
   <testcase classname="com.example.ShoppingServiceTest" name="emptyCartPriceShouldBeNil" time="0"/>
-  <testcase classname="com.example.ShoppingServiceTest" name="emptyCartShouldHaveZeroItems" time="0.001"/>
-  <testcase classname="com.example.ShoppingServiceTest" name="cartDetailsAreNilIfEmptyCart" time="0"/>
   <testcase classname="com.example.ShoppingServiceTest" name="emptyingCartShouldZeroizeCart" time="0"/>
+  <testcase classname="com.example.ShoppingServiceTest" name="cartPriceShouldBeAccurate" time="0"/>
+  <testcase classname="com.example.ShoppingServiceTest" name="cartDetailsAreNilIfEmptyCart" time="0"/>
 </testsuite>
