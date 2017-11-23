@@ -1,0 +1,136 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.ibm.in.gbs</groupId>
+  <artifactId>apmm</artifactId>
+  <version>1.0</version>
+  <packaging>jar</packaging>
+  
+  <name>apmm</name>
+  <url>http://maven.apache.org</url>
+  
+  <description>
+	This project is used for the puspose of internal cash management.
+  </description>
+
+  
+  	<licenses>
+		<license>
+			<name>MIT</name>
+			<url>http://github.com/xetorthio/jedis/raw/master/LICENSE.txt</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+
+	<issueManagement>
+		<system>github</system>
+		<url>http://github.com/xetorthio/jedis/issues</url>
+	</issueManagement>
+  
+	<mailingLists>
+		<mailingList>
+			<name>Jedis Mailing List</name>
+			<post>jedis_redis@googlegroups.com</post>
+			<archive>
+        http://groups.google.com/group/jedis_redis
+      </archive>
+		</mailingList>
+	</mailingLists>
+
+  
+  <properties>
+	<junit.version>4.10</junit.version>
+	<user_name>Tyagi</user_name>
+	<prod_repo_url>file:///C:/Repo/${user_name}</prod_repo_url>
+  </properties>
+  
+  <distributionManagement>
+	<repository>
+		<id>ProdRepo</id>
+		<url>${prod_repo_url}</url>	
+	</repository>
+  </distributionManagement>
+  
+  <build>
+	<plugins>
+	
+		<plugin>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-compiler-plugin</artifactId>
+			<version>3.1</version>
+			<configuration>
+				<source>1.7</source>
+				<target>1.7</target>
+			</configuration>
+		</plugin>
+	
+	</plugins>
+	
+  </build>
+  
+  
+  <reporting>
+
+	<plugins>
+		
+		<plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-javadoc-plugin</artifactId>
+       </plugin>
+	
+		<plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-checkstyle-plugin</artifactId>
+        </plugin>
+
+		<plugin>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-pmd-plugin</artifactId>
+			<version>3.8</version>
+		</plugin>	
+			
+		<plugin>
+			<groupId>org.codehaus.mojo</groupId>
+			<artifactId>cobertura-maven-plugin</artifactId>
+			<configuration>
+				<formats>
+					<format>html</format>
+					<format>xml</format>
+				</formats>
+			</configuration>
+		</plugin>
+		
+		<plugin>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-surefire-report-plugin</artifactId>
+			<version>2.20.1</version>
+		</plugin>
+		
+	</plugins>
+  
+  </reporting>
+ 
+  
+  <dependencies>
+  
+   <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-aop</artifactId>
+      <version>4.2.5.RELEASE</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.hibernate</groupId>
+      <artifactId>hibernate-core</artifactId>
+      <version>4.0.0.Final</version>
+    </dependency>
+
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>${junit.version}</version>
+    </dependency>
+  </dependencies>
+
+</project>
