@@ -1,10 +1,5 @@
 com\example\exception\InvalidSalaryException.class
-com\sm\example\Calculator.class
-com\example\HelloGit.class
-com\example\HelloWorld.class
 com\example\model\Product.class
 com\example\exception\InvalidProductException.class
-com\example\Shirt.class
-com\sm\example\HelloWorld.class
 com\example\PayrollService.class
 com\example\ShoppingService.class

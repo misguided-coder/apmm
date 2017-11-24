@@ -24,7 +24,5 @@ public class PayrollService{
 		}
 		return salary*.10;
 	}
-	
-	//some change
 
 }
