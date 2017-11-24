@@ -14,7 +14,7 @@ public class PayrollServiceTest{
 		
 		try {
 			double rs = payrollService.da(10000.00);
-			Assert.assertEquals(5000.00,rs,2);	
+			Assert.assertEquals(1000.00,rs,2);	
 		} catch (InvalidSalaryException e) {
 			e.printStackTrace();
 		}
